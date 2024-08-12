@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>AMarkets</title>
+</head>
+<body>
+<section class="warning">
+    <div class="warning__inner container">
+        <div class="warning__title">Успейте принять <br>участие в конкурсе</div>
+        <div class="warning__subtitle">до конца конкурса <br>осталось</div>
+
+        <div class="warning__counter">
+            <div class="timer">
+                <div class="timer__item">
+                    <span class="days">00</span> Дней
+                </div>
+                <div class="timer__item">
+                    <span class="hours">00</span> Часов
+                </div>
+                <div class="timer__item">
+                    <span class="minutes">00</span> Минут
+                </div>
+            </div>
+        </div>   
+        <div class="warning__close close">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#FB7101"/>
+                <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="white" stroke-opacity="0.8"/>
+                <path d="M16 16L24 24" stroke="#1F252D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M24 16L16 24" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                
+        </div>      
+    </div>
+</section>
+<header class="header">
+    <div class="header__inner container">
+        <a class="header__logo logo" href="/"><img src="./img/logo.svg" alt="AMarkets" class="logo__image" width="84" height="44"></a>
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#about">О конкурсе</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#investments">Инвестиции</a>
+              </li>
+            </ul>
+          </nav>
+    </div>
+</header>
+<main class="content">
+    <section class="section section--hidden-x container" id="about">
+        <div class="section__body">
+            <div class="amarkets">
+                <div class="amarkets__main">
+                    <div class="amarkets__body">
+                        <div class="amarkets__subtitle">
+                            Партнерский Марафон — Зимний Сезон
+                        </div>
+                        <h1 class="amarkets__title">
+                            Конкурс <br>для партнеров 
+                        </h1>
+                        <div class="amarkets__description">
+                            <p>Станьте самым активным партнером в ноябре 2021 - январе 2022<br>И выиграйте крутые призы от AMarkets!</p>
+                        </div>
+                        <button
+                            class="amarkets__button btn"
+                            type="button"
+                            data-modal="#callback-modal"
+                            >
+                        Принять участие
+                        </button>
+                    </div>
+                    <img
+                        class="amarkets__image"
+                        src="./img/AMarkets-bg.svg"
+                        alt=""
+                        width="459" height="364"
+                        />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section container" id="investments">
+        <header class="section__header">
+            <h2 class="section__title">Инвестируйте в акции <br>популярных компаний</h2>
+            <div class="section__description">
+                <p>Зарабатывайте на росте и падении, а так же получайте <br>до 8.3% годовых в валюте в виде дивидентов</p>
+            </div>
+        </header>
+        <div class="section__body full-right">
+            <div class="partners">
+                <div class="swiper partners__list">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="partners__item tesla">
+                                <article class="partner-card">
+                                    <div class="partner-card__body">
+                                        <h3 class="partner-card__title">
+                                            Tesla
+                                        </h3>
+                                        <div class="partner-card__link"><a href="/">TSLA.US</a></div>
+                                        <div class="partner-card__extra">
+                                            <div class="partner-card__extra-title">Last year</div>
+                                            <div class="partner-card__extra-text">
+                                                +913%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img
+                                        class="partner-card__image"
+                                        src="./img/partners/partner-01.svg"
+                                        alt=""
+                                        width="50" height="50"
+                                        />
+                                </article>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners__item nvidia">
+                                <article class="partner-card">
+                                    <div class="partner-card__body">
+                                        <h3 class="partner-card__title">
+                                            Nvidia
+                                        </h3>
+                                        <div class="partner-card__link"><a href="/">NVDA.US</a></div>
+                                        <div class="partner-card__extra-title">
+                                            Last year
+                                        </div>
+                                        <div class="partner-card__extra-text">
+                                            +141%
+                                        </div>
+                                    </div>
+                                    <img
+                                        class="partner-card__image"
+                                        src="./img/partners/partner-02.svg"
+                                        alt=""
+                                        width="50" height="50"
+                                        />
+                                </article>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners__item AMD">
+                                <article class="partner-card">
+                                    <div class="partner-card__body">
+                                        <h3 class="partner-card__title">
+                                            AMD
+                                        </h3>
+                                        <div class="partner-card__link"><a href="/">AMD.US</a></div>
+                                        <div class="partner-card__extra-title">
+                                            Last year
+                                        </div>
+                                        <div class="partner-card__extra-text">
+                                            +95%
+                                        </div>
+                                    </div>
+                                    <img
+                                        class="partner-card__image"
+                                        src="./img/partners/partner-03.svg"
+                                        alt=""
+                                        width="50" height="50"
+                                        />
+                                </article>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners__item apple">
+                                <article class="partner-card">
+                                    <div class="partner-card__body">
+                                        <h3 class="partner-card__title">
+                                            Apple
+                                        </h3>
+                                        <div class="partner-card__link"><a href="/">APP.US</a></div>
+                                        <div class="partner-card__extra-title">
+                                            Last year
+                                        </div>
+                                        <div class="partner-card__extra-text">
+                                            +83%
+                                        </div>
+                                    </div>
+                                    <img
+                                        class="partner-card__image"
+                                        src="./img/partners/partner-04.svg"
+                                        alt=""
+                                        width="50" height="50"
+                                        />
+                                </article>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners__item amazon">
+                                <article class="partner-card">
+                                    <div class="partner-card__body">
+                                        <h3 class="partner-card__title">
+                                            Amazon
+                                        </h3>
+                                        <div class="partner-card__link"><a href="/">AMZN.US</a></div>
+                                        <div class="partner-card__extra-title">
+                                            Last year
+                                        </div>
+                                        <div class="partner-card__extra-text">
+                                            +77%
+                                        </div>
+                                    </div>
+                                    <img
+                                        class="partner-card__image"
+                                        src="./img/partners/partner-05.svg"
+                                        alt=""
+                                        width="50" height="50"
+                                        />
+                                </article>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners__item ebay">
+                                <article class="partner-card">
+                                    <div class="partner-card__body">
+                                        <h3 class="partner-card__title">
+                                            eBay inc.
+                                        </h3>
+                                        <div class="partner-card__link"><a href="/">EBAY.US</a></div>
+                                        <div class="partner-card__extra-title">
+                                            Last year
+                                        </div>
+                                        <div class="partner-card__extra-text">
+                                            +75%
+                                        </div>
+                                    </div>
+                                    <img
+                                        class="partner-card__image"
+                                        src="./img/partners/partner-06.svg"
+                                        alt=""
+                                        width="50" height="50"
+                                        />
+                                </article>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners__item google">
+                                <article class="partner-card">
+                                    <div class="partner-card__body">
+                                        <h3 class="partner-card__title">
+                                            Google
+                                        </h3>
+                                        <div class="partner-card__link"><a href="/">GOOG.US</a></div>
+                                        <div class="partner-card__extra-title">
+                                            Last year
+                                        </div>
+                                        <div class="partner-card__extra-text">
+                                            +35.80%
+                                        </div>
+                                    </div>
+                                    <img
+                                        class="partner-card__image"
+                                        src="./img/partners/partner-07.svg"
+                                        alt=""
+                                        width="50" height="50"
+                                        />
+                                </article>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners__item microsoft">
+                                <article class="partner-card">
+                                    <div class="partner-card__body">
+                                        <h3 class="partner-card__title">
+                                            Microsoft
+                                        </h3>
+                                        <div class="partner-card__link"><a href="/">MSFT.US</a></div>
+                                        <div class="partner-card__extra-title">
+                                            Last year
+                                        </div>
+                                        <div class="partner-card__extra-text">
+                                            +528%
+                                        </div>
+                                    </div>
+                                    <img
+                                        class="partner-card__image"
+                                        src="./img/partners/partner-08.svg"
+                                        alt=""
+                                        width="50" height="50"
+                                        />
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="partners__button btn" type="button" data-modal="#callback-modal">Регистрация</button>
+        </div>
+        </section>
+    </section>
+</main>
+<footer class="footer">
+
+</footer>
+
+<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+    <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button
+        class="mobile-overlay__close-button cross-button"
+        type="submit"
+        >
+        <span class="visually-hidden">Close navigation menu</span>
+        </button>
+    </form>
+    <div class="mobile-overlay__body">
+        <ul class="mobile-overlay__list">
+        <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="/">About us</a>
+        </li>
+        <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="/">Services</a>
+        </li>
+        <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="/">Use Cases</a>
+        </li>
+        <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="/">Pricing</a>
+        </li>
+        <li class="mobile-overlay__item">
+            <a class="mobile-overlay__link" href="/">Blog</a>
+        </li>
+        </ul>
+    </div>
+</dialog>
+<div class="modal narrow" id="callback-modal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<button class="modal-close" aria-label="Закрыть">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#FB7101"/>
+                    <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="white" stroke-opacity="0.8"/>
+                    <path d="M16 16L24 24" stroke="#1F252D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M24 16L16 24" stroke="#111827" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+			<div class="modal-caption">Регистрация</div>
+            <form class="form">
+                <div class="form__field">
+                    <label for="firstname">
+                        Имя*
+                    </label>
+                    <input id="username" name="firstname" type="text" placeholder="Иван">
+                </div>
+                <div class="form__field">
+                    <label for="lastname">
+                        Фамилия*
+                    </label>
+                    <input id="userphone" name="lastname" type="text" placeholder="Иванов">
+                </div>
+                <div class="form__field">
+                    <label for="useremail">
+                        E-mail*
+                    </label>
+                    <input id="userphone" name="useremail" type="email" placeholder="unname@example.com">
+                </div>
+                <div class="form__field">
+                    <input type="checkbox" name="confidentiality" id="confidentiality">
+                    <label for="confidentiality">
+                        Я прочел и принимаю условия <a href="#">Клиентского соглашения</a>, <a href="#">Политики конфиденциальности</a> и <a href="#">Политики возврата денежных средств</a>
+                    </label>
+                </div>
+                <div class="form__field">
+                    <button type="submit" class="btn btn-another">
+                        Отправить
+                    </button>
+                </div>
+            </form>
+		</div>
+	</div>
+</div>
+<div class="overlay"></div>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./libs/swiper-bundle.min.js"></script>
+<script src="./js/jquery.cookie.js"></script>
+<script src="./js/partners.js"></script>
+<script src="./js/scripts.js"></script>
+</body>
+</html>

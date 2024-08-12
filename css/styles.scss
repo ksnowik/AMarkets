@@ -1,0 +1,18 @@
+@import
+    'normalize',
+    'fonts',
+    'mixins',
+    'media',
+    'variables',
+    'utils',
+    'globals';
+
+@import
+    'blocks/header',
+    'blocks/warning',
+    'blocks/mobile-overlay',
+    'blocks/popup',
+    'blocks/form',
+    'blocks/amarkets',
+    'blocks/section',
+    'blocks/partners';
