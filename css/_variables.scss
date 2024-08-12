@@ -1,0 +1,21 @@
+:root {
+    --color-dark: #111827;
+    --color-light: #FFFFFF;
+    --color-accent: #FB7101;
+    --color-accent-light: #FFF1E6;
+    --color-accent-dark: #FEE3CC;
+
+
+    --border: 1px solid var(--color-accent);
+
+    --font-family-base: 'Helvetica Neue', sans-serif;
+
+    --container-width: 1200px;
+    --container-padding-x: 15px;
+
+    --section-padding-y: 50px;
+    
+    --button-height: 68px;
+    
+    --transition-duration: 0.2s;    
+}

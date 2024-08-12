@@ -1,0 +1,89 @@
+.amarkets {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--section-padding-y);
+    padding-top: 40px;
+  
+    @include tablet {
+      row-gap: 60px;
+    }
+  
+    &__main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 30px;
+  
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+  
+    &__body {
+        max-width: 600px;
+  
+      @include mobile {
+        display: contents;
+      }
+    }
+
+    &__subtitle {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: var(--color-accent);
+        margin-bottom: 10px;
+    }
+  
+    &__title {
+      @include mobile {
+        order: -2;
+        margin-bottom: 40px;
+      }
+
+      br {
+        @include mobile {
+          display: none;
+        }
+      }
+    }
+  
+    &__description {
+        font-size: 18px;
+        line-height: 32px;
+        margin-top: 30px;
+        margin-bottom: 25px;
+  
+      @include mobile {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 26px;
+        margin-top: 0;
+      }
+    }
+  
+    &__button {
+      @include mobile {
+        width: 100%;
+        max-width: 390px;
+        margin-inline: auto;
+        padding: 0 20px;
+        font-size: 14px;
+      }
+    }
+  
+    &__image {
+      @include tablet {
+        max-width: 40%;
+        height: auto;
+      }
+  
+      @include mobile {
+        order: -1;
+        width: 100%;
+        max-width: 50%;
+        margin-bottom: 20px;
+      }
+    }
+  }
